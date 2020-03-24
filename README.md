@@ -7,7 +7,7 @@ http://localhost:5000/api/v1/resources/books?author=Connie+Willis
 
 # What Flask Does
 
-Flask
+
 Flask (source code) is a Python web framework built with a small core and easy-to-extend philosophy.
 
 
