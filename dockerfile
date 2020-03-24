@@ -1,7 +1,18 @@
 FROM python:latest
 
-RUN mkdir api
+RUN pip install flask
 
-COPY api/api.py /
+RUN mkdir -p /api
+RUN cd /api
 
-CMD [ "python", "api/api.py" ] 
+COPY /api/api.py /
+
+WORKDIR /api
+
+RUN pip install flask
+
+EXPOSE 5000
+
+USER 1001
+
+CMD ["python","/api/api.py"]
